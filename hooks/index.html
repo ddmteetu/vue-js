@@ -16,8 +16,16 @@
         data: {
 
         },
+        methods: {
+          alertTime() {
+            alert(`The time is ${Date.now().toLocaleString()}`)
+          }
+        },
         created() {
-          alert(`The time is ${Date.now().toLocaleString()}`)
+          this.alertTime()
+        },
+        mounted() {
+          this.alertTime()
         }
       })
     </script>
